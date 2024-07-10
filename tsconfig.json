@@ -12,6 +12,7 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
+    // "noUnusedLocals": false,
     "plugins": [
       {
         "name": "next"
@@ -21,6 +22,13 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "src/app/page.jsx",
+    "src/components/Todo.jsx"
+, "src/app/layout.tsx", "src/components/NavBar.jsx", "src/lib/config/db.js"  ],
   "exclude": ["node_modules"]
 }
