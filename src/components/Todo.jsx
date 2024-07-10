@@ -20,15 +20,15 @@ const Todo = ({
       <td className="px-6 py-4">{title}</td>
       <td className="px-6 py-4">{description}</td>
       <td className="px-6 py-4">{complete ? "Complete" : "Pending"}</td>
-      <td className="px-6 py-4 flex gap-2">
+      <td className="px-6 py-4 flex gap-4">
         <button
-          className="px-4 py-2 bg-green-500 text-white"
+          className="px-4 py-2 bg-green-500 hover:bg-green-600 shadow hover:shadow-stone-400 text-white rounded-2xl"
           onClick={() => updateTodo(mongoId)}
         >
           Done
         </button>
         <button
-          className="px-3 py-2 bg-red-500 text-white"
+          className="px-3 py-2 bg-red-500 hover:bg-red-600 text-white shadow hover:shadow-stone-400 rounded-2xl"
           onClick={() => deleteTodo(mongoId)}
         >
           DELETE
